@@ -192,6 +192,28 @@ Configuration for TTGO T-Camera
       # Image settings
       name: My Camera
       # ...
+  
+Configuration for `ESP-EYE <https://www.espressif.com/en/products/hardware/esp-eye/overview>`_
+-------------------------------
+
+.. code-block:: yaml
+
+    # Example configuration entry
+    esp32_camera:
+      external_clock:
+      pin: GPIO4
+      frequency: 20MHz
+    i2c_pins:
+      sda: GPIO18
+      scl: GPIO23
+    data_pins: [GPIO34, GPIO13, GPIO14, GPIO35, GPIO39, GPIO38, GPIO37, GPIO36]
+    vsync_pin: GPIO5
+    href_pin: GPIO27
+    pixel_clock_pin: GPIO25
+
+    # Image settings
+    name: My Camera
+    # ...
 
 
 See Also
